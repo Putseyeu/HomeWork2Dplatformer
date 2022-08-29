@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class AnimatorPlayer : MonoBehaviour
 {
-    [SerializeField] private Animator _animator;
-
     private const string IsRunning = "IsRunning";
     private const string IsJumping = "IsJumping";
 
+    [SerializeField] private Animator _animator;
+    
     public void Run()
     {
         _animator.SetBool(IsRunning, true);

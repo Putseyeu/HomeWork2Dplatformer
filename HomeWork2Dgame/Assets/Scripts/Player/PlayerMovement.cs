@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private const string Horizontal = "Horizontal";
+
     [SerializeField] private float _speed;
     [SerializeField] private float _forceJump;
     [SerializeField] private AnimatorPlayer _animator;
@@ -14,9 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float _horizontalMove = 0f;
     private bool _facingRight = true;
     private float _normalizingFloat = 10f;
-    private const string Horizontal = "Horizontal";
-    
-
+        
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -67,9 +67,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
+        int changeDdirection = -1;
         _facingRight = !_facingRight;
         Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
+        theScale.x *= changeDdirection;
         transform.localScale = theScale;
     }
 }

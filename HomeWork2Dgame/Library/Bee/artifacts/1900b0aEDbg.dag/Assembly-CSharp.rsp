@@ -385,6 +385,7 @@
 "Assets/Low_Swordman/Demo/Scripts/Swordman.cs"
 "Assets/Scripts/Coin/Coin.cs"
 "Assets/Scripts/Coin/Spawn.cs"
+"Assets/Scripts/Coin/Spawner.cs"
 "Assets/Scripts/Enemy/AnimatorEnemy.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Enemy/WaypointMovement.cs"
